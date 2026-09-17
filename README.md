@@ -6,10 +6,10 @@ Open **Git-Session-2.html** in Chrome, Edge, Safari, or Firefox. It is a self-co
 
 1. Select a lesson in the left catalog. The 14 lessons follow the source document; item 15 is the playground.
 2. Ask the team: “Where does HEAD point? Which branch will move? Will this create a new commit?”
-3. Click **Next step** to place the current step command in the console. This does not execute anything. Discuss the command, then click **Run** or press Enter. Only then do HEAD, the graph, the step counter, and **What just happened** update. Click **Next step** again to load the following command. Editing a loaded command runs it as a custom command without completing the guided step; click **Next step** to reload the intended command. Failed commands stay on the same step, except for the intentional rejection in lesson 13.
+3. Click **Run next step** to immediately execute the next demo command. Watch its output, HEAD, the graph, and **What just happened** update together. The console remains available for custom commands using **Run** or Enter. Failed commands stay on the same step, except for the intentional rejection in lesson 13.
 4. Click **Back** to restore the state before the previous action. **↺** restarts the lesson.
 5. Click a commit to inspect its message, parents, and snapshot. **Fit graph** fits the history into the panel; **⛶** expands the graph. Unreachable commits have dashed outlines to help explain recovery.
-6. Click **Present** to hide the catalog. When an input or button is not focused, → loads the next command and ← goes back. Press Enter in the command input to execute. Escape closes the expanded graph or exits presentation mode.
+6. Click **Present** to hide the catalog. When an input or button is not focused, → runs the next demo step and ← goes back. Press Enter in the command input to execute. Escape closes the expanded graph or exits presentation mode.
 7. For conflicts, run the prepared resolution or edit the result directly in the BASE / OURS / THEIRS editor. Save, run `git add`, and complete the operation.
 8. In the playground, click an example to place it in the console, or enter a supported command. Type `help` for syntax and limits.
 

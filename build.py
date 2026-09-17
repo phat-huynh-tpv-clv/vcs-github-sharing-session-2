@@ -9,3 +9,7 @@ html = html.replace('<script src="app.js"></script>', '<script>' + js + '</scrip
 out = root / 'Git-Session-2.html'
 out.write_text(html)
 print(f'Created {out} ({out.stat().st_size:,} bytes)')
+
+# Keep the GitHub Pages entry point in sync with the standalone download.
+(root / 'index.html').write_text(html)
+print('Updated index.html for GitHub Pages')
