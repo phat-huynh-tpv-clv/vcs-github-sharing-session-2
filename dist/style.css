@@ -52,3 +52,5 @@
 @media(max-width:720px){.visual .panel-head{flex-wrap:wrap}.graph-tools{justify-content:flex-start}.presentation h1{font-size:28px}.presentation .intro p{font-size:16px}.presentation #head-chain{font-size:16px}.up-next code{font-size:13px}#changes{max-height:140px}}
 
 .chapter-controls{padding:0 18px 12px;display:flex;justify-content:flex-end}.chapter-controls button{color:var(--mint)}
+
+.chapter-controls{align-items:center;gap:12px;flex-wrap:wrap}.chapter-controls[hidden]{display:none}.chapter-controls small{color:var(--muted);font-size:12px;line-height:1.4}
