@@ -17,7 +17,7 @@
 .up-next>span,.upcoming-label{color:var(--mint)}.up-next code{display:block;font-size:14px;margin-top:5px;overflow-wrap:anywhere}
 .step.current{background:transparent;border:1px dashed var(--mint);color:#c2f4dc;box-shadow:inset 3px 0 var(--mint)}
 .step.just-executed{background:transparent;border-color:transparent;color:var(--muted);box-shadow:none}
-.step-label{margin-bottom:4px}.executed-label{color:var(--muted)}
+.step-label{margin-bottom:4px}.executed-label{color:var(--mint)}
 #steps{flex:0 1 auto;max-height:260px;min-height:120px;overflow-anchor:none;scrollbar-gutter:stable}
 #last-action{margin-top:12px;padding:12px;background:#0d1723;border-radius:8px;border:1px solid #345047}
 #last-action[hidden]{display:none}#last-action .action-label{font-size:11px;font-weight:700;letter-spacing:1px;color:var(--mint);margin-bottom:6px}
@@ -56,3 +56,5 @@
 .chapter-controls{align-items:center;gap:12px;flex-wrap:wrap}.chapter-controls[hidden]{display:none}.chapter-controls small{color:var(--muted);font-size:12px;line-height:1.4}
 
 .chapter-controls small{flex:1;min-width:180px}.chapter-controls button{flex-shrink:0}
+
+.step.just-executed .num{color:var(--mint)}
