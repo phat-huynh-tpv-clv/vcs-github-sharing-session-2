@@ -8,8 +8,8 @@ Open **Git-Session-2.html** in Chrome, Edge, Safari, or Firefox. It is a self-co
 2. Ask the team: “Where does HEAD point? Which branch will move? Will this create a new commit?”
 3. Click **Run next step** to immediately execute the next demo command. Watch its output, HEAD, the graph, and **What just happened** update together. The console remains available for custom commands using **Run** or Enter. Failed commands stay on the same step, except for the intentional rejection in lesson 13.
 4. Click **Back** to restore the state before the previous action. **↺** restarts the lesson.
-5. Click a commit to inspect its message, parents, and snapshot. **Fit graph** fits the history into the panel; **⛶** expands the graph. Unreachable commits have dashed outlines to help explain recovery.
-6. Click **Present** to hide the catalog. When an input or button is not focused, → runs the next demo step and ← goes back. Press Enter in the command input to execute. Escape closes the expanded graph or exits presentation mode.
+5. **Just executed** marks the last command that ran; **Up next** names the next guided command. A compact output appears beside **What just happened**, while the complete console stays below. New commits have a yellow ring and NEW label; moved refs are orange. Click a commit to inspect its message, parents, and snapshot. **Fit graph** fits the history into the panel; **⛶** expands the graph. **Go to HEAD** returns to actual size and centers the current commit. Unreachable commits have dashed outlines to help explain recovery.
+6. Click **Present** to hide the catalog and enlarge commands, graph labels, explanations, and state details. When an input or button is not focused, → runs the next demo step and ← goes back. Press Enter in the command input to execute. Escape closes the expanded graph or exits presentation mode.
 7. For conflicts, run the prepared resolution or edit the result directly in the BASE / OURS / THEIRS editor. Save, run `git add`, and complete the operation.
 8. In the playground, click an example to place it in the console, or enter a supported command. Type `help` for syntax and limits.
 

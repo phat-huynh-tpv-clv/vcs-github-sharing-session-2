@@ -10,3 +10,43 @@
 .terminal{margin-top:20px;margin-bottom:0}#output{max-height:200px}
 
 .command-hint{margin:0;padding:8px 20px;color:var(--mint);font-size:13px;border-top:1px solid var(--border)}
+
+/* Presentation flow: distinguish the action just taken from the next command. */
+.up-next{padding:13px 18px;background:#111a28;border-bottom:1px solid var(--border)}
+.up-next>span,.step-label{display:block;font:700 11px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;letter-spacing:1px}
+.up-next>span,.upcoming-label{color:#acbcd5}.up-next code{display:block;font-size:14px;margin-top:5px;overflow-wrap:anywhere}
+.step.current{background:transparent;border-color:#53627a;border-style:dashed;color:#c6d3e6}
+.step.just-executed{background:#203a31;border:1px solid #5ba982;color:#c2f4dc;box-shadow:inset 3px 0 var(--mint)}
+.step-label{margin-bottom:4px}.executed-label{color:var(--mint)}
+#steps{flex:0 1 auto;max-height:260px;min-height:120px;overflow-anchor:none;scrollbar-gutter:stable}
+#last-action{margin-top:12px;padding:12px;background:#0d1723;border-radius:8px;border:1px solid #345047}
+#last-action[hidden]{display:none}#last-action .action-label{font-size:11px;font-weight:700;letter-spacing:1px;color:var(--mint);margin-bottom:6px}
+#last-action .action-warning{color:#ffd75b}#last-action>code{display:block;font-size:14px;color:#f0f5ff;white-space:pre-wrap;overflow-wrap:anywhere}
+#last-action pre{margin:10px 0 0;font:13px/1.65 ui-monospace,monospace;color:#b8cce0;white-space:pre-wrap;overflow-wrap:anywhere;max-height:110px;overflow:auto}
+#last-action a{display:block;margin-top:8px;font-size:13px;color:var(--mint)}
+.commands .explanation{flex:1}.explanation>p{margin-top:13px}
+.ref-change{padding:3px 0}.ref-change+.ref-change{border-top:1px solid #3c3d38}
+#changes{font-size:13px;line-height:1.6;max-height:170px;overflow:auto}
+.yellow{background:#ffd75b}.orange{background:#ffc58d}
+.legend{font-size:12px;gap:10px 16px}.graph-tools{flex-wrap:wrap;justify-content:flex-end}
+.graph-tools button{font-size:13px;min-height:34px}.visual .panel-head{align-items:flex-start}
+.state-description{font-size:12px;color:#aebfd5;margin-bottom:12px}.empty{color:#b4c2d5}
+.ref-group+.ref-group{border-top:1px solid var(--border);margin-top:12px;padding-top:12px}
+.ref-group h3{font-size:12px;font-weight:600;color:var(--mint);margin:0 0 7px}
+.remote-line{font-size:13px}.remote-line>span{overflow-wrap:anywhere;min-width:0}.remote-alert{color:#ffd75b}
+#inspector{font-size:13px}.file code{font-size:13px}
+.node:focus-visible{outline:none}.node:focus-visible .commit-center{stroke:#fff;stroke-width:4}
+.presentation .intro{padding:18px 0}.presentation h1{font-size:36px}.presentation .intro p{font-size:18px;max-width:none}
+.presentation .panel-head h2{font-size:18px}.presentation .quiet,.presentation .primary{font-size:16px}
+.presentation #head-chain{font-size:19px}.presentation #changes{font-size:16px}
+.presentation .step,.presentation .up-next code,.presentation #last-action>code{font-size:17px}
+.presentation .step-label,.presentation .up-next>span,.presentation #last-action .action-label{font-size:13px}
+.presentation .explanation>span{font-size:13px}.presentation .explanation>p{font-size:19px}
+.presentation #last-action pre,.presentation #output,.presentation #command,.presentation #inspector{font-size:16px}
+.presentation .legend,.presentation .state-description,.presentation .ref-group h3,.presentation .remote-caption{font-size:14px}
+.presentation .remote-line,.presentation .file code,.presentation .state-grid .panel>div:not(.panel-head){font-size:16px}
+.presentation .concept{font-size:18px}.presentation .command-comparison,.presentation .command-comparison code{font-size:16px}
+.presentation #quick-question>p{font-size:19px}.presentation #quick-question .question-answer{font-size:16px}
+.presentation #steps{max-height:260px}.presentation #graph{min-height:340px;max-height:560px}
+@media(max-width:1100px){.presentation .workspace{grid-template-columns:1fr}.presentation .state-grid{grid-template-columns:1fr}.graph-tools button{padding:5px 9px}}
+@media(max-width:720px){.visual .panel-head{flex-wrap:wrap}.graph-tools{justify-content:flex-start}.presentation h1{font-size:28px}.presentation .intro p{font-size:16px}.presentation #head-chain{font-size:16px}.up-next code{font-size:13px}#changes{max-height:140px}}
