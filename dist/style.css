@@ -50,3 +50,5 @@
 .presentation #steps{max-height:260px}.presentation #graph{min-height:340px;max-height:560px}
 @media(max-width:1100px){.presentation .workspace{grid-template-columns:1fr}.presentation .state-grid{grid-template-columns:1fr}.graph-tools button{padding:5px 9px}}
 @media(max-width:720px){.visual .panel-head{flex-wrap:wrap}.graph-tools{justify-content:flex-start}.presentation h1{font-size:28px}.presentation .intro p{font-size:16px}.presentation #head-chain{font-size:16px}.up-next code{font-size:13px}#changes{max-height:140px}}
+
+.chapter-controls{padding:0 18px 12px;display:flex;justify-content:flex-end}.chapter-controls button{color:var(--mint)}
