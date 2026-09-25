@@ -62,8 +62,8 @@ const lessons=[
     "key": "<strong>Git ≠ GitHub.</strong> Git manages snapshots on your machine. GitHub hosts remotes and provides Pull Requests, reviews, and CI. Committing does not mean you have pushed.<br><br><strong>Commit messages:</strong> <code>type(scope): describe the change</code>. Use <code>feat</code> for a capability, <code>fix</code> for a correction, <code>refactor</code> for restructuring, and <code>chore</code> for maintenance. Describe the actual change, not just “update code”. This is a team convention, not a Git requirement.",
     "steps": [
       {
-        "cmd": "git switch -c feature/booking-api",
-        "note": "Create a branch from develop. HEAD points to the new branch; no commit is created yet."
+        "cmd": "git checkout -b feature/booking-api",
+        "note": "Use the familiar checkout -b to create a branch from develop AND switch to it. HEAD points to the new branch; no commit is created. In the next chapter, we will separate these two actions with branch and switch."
       },
       {
         "cmd": "edit app/service.py \"tax_rate = 0.08\"",
@@ -96,7 +96,7 @@ const lessons=[
     "steps": [
       {
         "cmd": "git branch feature/booking-api",
-        "note": "Create a branch pointing to B. HEAD stays on develop. Creating a branch does not switch to it."
+        "note": "In the recap, checkout -b created a branch AND switched to it. Here, git branch only creates a branch pointing to B. HEAD stays on develop. Next, we will switch to it explicitly."
       },
       {
         "cmd": "git switch feature/booking-api",
