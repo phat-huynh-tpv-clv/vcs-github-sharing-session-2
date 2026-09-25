@@ -15,9 +15,9 @@
 .up-next{padding:13px 18px;background:#111a28;border-bottom:1px solid var(--border)}
 .up-next>span,.step-label{display:block;font:700 11px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;letter-spacing:1px}
 .up-next>span,.upcoming-label{color:var(--mint)}.up-next code{display:block;font-size:14px;margin-top:5px;overflow-wrap:anywhere}
-.step.current{background:transparent;border-color:#5ba982;border-style:dashed;color:#c2f4dc}
-.step.just-executed{background:#203a31;border:1px solid #5ba982;color:#c2f4dc;box-shadow:inset 3px 0 var(--mint)}
-.step-label{margin-bottom:4px}.executed-label{color:var(--mint)}
+.step.current{background:transparent;border:1px dashed var(--mint);color:#c2f4dc;box-shadow:inset 3px 0 var(--mint)}
+.step.just-executed{background:transparent;border-color:transparent;color:var(--muted);box-shadow:none}
+.step-label{margin-bottom:4px}.executed-label{color:var(--muted)}
 #steps{flex:0 1 auto;max-height:260px;min-height:120px;overflow-anchor:none;scrollbar-gutter:stable}
 #last-action{margin-top:12px;padding:12px;background:#0d1723;border-radius:8px;border:1px solid #345047}
 #last-action[hidden]{display:none}#last-action .action-label{font-size:11px;font-weight:700;letter-spacing:1px;color:var(--mint);margin-bottom:6px}
